@@ -1,0 +1,25 @@
+{
+  "sectionTitle": "How It Works",
+  "headlinestart": "Simplify the Process.",
+  "gradiantheadline": " Just three Easy Steps",
+  "headlineend": " to Get What You Deserve",
+  "subHeadline": "From uploading your license to getting paid — we've streamlined the process to be fast, secure, and hassle-free.",
+
+  "solutions": [
+    {
+      "image" : "/upload-1.png",
+      "title": "Upload License",
+      "description": "Simply upload your software license details through our secure portal. 📤"
+    },
+    {
+      "image" : "/valuation-2.png",
+      "title": "Get Valuation",
+      "description": "Our experts analyze your license and provide a fair market valuation. 💰"
+    },
+    {
+      "image" : "/getpaid-2.png",
+      "title": "Get Paid",
+      "description": "Accept our offer and receive payment quickly and securely. 💳"
+    }
+  ]
+}
