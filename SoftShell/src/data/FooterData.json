@@ -1,0 +1,56 @@
+{
+  "company": {
+    "name": "SoftShell",
+    "logo": "/logo.png",
+    "locations": [
+      {
+        "flag": "/usa-flag.svg",
+        "address": "304 S. Jones Blvd #520 Las Vegas, NV 89107"
+      },
+      {
+        "flag": "/india-flag.svg",
+        "address": "203/204 Baleshwar Avenue, Bodakdev, Ahmedabad"
+      }
+    ],
+    "contact": {
+      "phone": "+1 888 777 4629",
+      "email": "sales@softshell.com"
+    },
+    "copyright": "Copyright © 2025 by SoftShell"
+  },
+  "links": {
+    "SERVICES": [
+      "Software Licensing Solutions",
+      "License Management & Enforcement",
+      "Compliance & Anti-Piracy Services",
+      "Integration & Automation",
+      "Custom Licensing Models"
+    ],
+    "ABOUT US": [
+      "About",
+      "Career",
+      "Partners & Ecosystem",
+      "Privacy Policy",
+      "Security Policy",
+      "Our Team"
+    ]
+  },
+  "socialIcons": [
+    {
+      "icon": "/facebook.svg",
+      "link": "#"
+    },
+    {
+      "icon": "/linkedin.svg",
+      "link": "#"
+    },
+    {
+      "icon": "/x.svg",
+      "link": "#"
+    },
+    {
+      "icon": "/youtube.svg",
+      "link": "#"
+    }
+  ]
+}
