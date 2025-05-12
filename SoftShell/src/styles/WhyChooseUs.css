@@ -1,5 +1,5 @@
 .services-container {
-  padding: 80px 100px;
+  padding: 100px 100px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   max-width: 1400px;
   margin: 0 auto;
@@ -7,7 +7,7 @@
 
 .section-header {
   text-align: left;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .page-title {
@@ -18,42 +18,48 @@
   margin-bottom: 1rem;
 }
 
-.headline {
-  font-size: 4rem;
+/* Headline Styles - now properly including h1 */
+.headline, 
+.gradient-headline,
+h1 {
+  font-size: 80px;
   font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
 }
 
 .gradient-headline {
-  font-size: 4rem;
   background: linear-gradient(to right, #1d73ff, #ff0184);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 600;
+  display: inline-block;
 }
 
 .subheadline {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #495057;
-  margin: 1.5rem 0;
+  line-height: 1.6;
+  margin: 20px 0 30px;
   max-width: 700px;
 }
 
 .section-link {
   display: inline-block;
-  margin-top: 1rem;
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  background: linear-gradient(to right, #1d73ff, #ff0184);
   padding: 12px 24px;
-  border-radius: 25px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #1d86ff, #ff108c);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(29, 115, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Solutions Grid Styles */
@@ -120,49 +126,100 @@
   margin-top: 20px;
 }
 
-/* Responsive Adjustments */
+/* Tablet View (1024px and below) */
 @media (max-width: 1024px) {
   .services-container {
-    padding: 60px 50px;
+    padding: 80px 60px;
   }
-  
+
+  .services-container .headline,
+  .services-container .gradient-headline {
+    font-size: 60px ;
+  }
+
+  .subheadline {
+    font-size: 17px;
+  }
+
   .solution-card-img {
     height: 180px;
   }
 }
 
+/* Mobile View (768px and below) */
 @media (max-width: 768px) {
   .services-container {
-    padding: 40px 30px;
+    padding: 60px 30px;
   }
   
-  .headline,
-  .gradient-headline {
-    font-size: 2rem;
+  .services-container .headline,
+  .services-container .gradient-headline {
+    font-size: 42px ;
+    line-height: 1.2 ;
   }
-  
+
+  .page-title {
+    font-size: 16px;
+  }
+
+  .subheadline {
+    font-size: 1rem;
+    margin: 15px 0 25px;
+  }
+
   .solutions-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 25px;
     margin-top: 40px;
   }
-  
+
+  .solution-card {
+    padding: 25px;
+  }
+
   .solution-card-img {
-    height: 220px;
+    height: 200px;
+  }
+
+  .section-link {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }
 
+/* Small Mobile View (480px and below) */
 @media (max-width: 480px) {
-  .headline,
-  .gradient-headline {
-    font-size: 1.7rem;
+  .services-container {
+    padding: 40px 20px;
   }
   
+  .services-container .headline,
+  .services-container .gradient-headline {
+    font-size: 32px;
+  }
+
+  .page-title {
+    font-size: 14px;
+  }
+
   .subheadline {
-    font-size: 1rem;
+    font-size: 15px;
   }
-  
+
   .solution-card-img {
     height: 160px;
+  }
+}
+
+/* Extra Small View (360px and below) */
+@media (max-width: 360px) {
+  .services-container {
+    padding: 30px 15px;
+  }
+  
+  .headline,
+  .gradient-headline,
+  h1 {
+    font-size: 28px;
   }
 }

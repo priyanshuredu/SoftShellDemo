@@ -23,7 +23,7 @@
   font-size: 18px;
   font-weight: bold;
   color: #000;
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
 }
 
 .gradient-text {
@@ -62,7 +62,7 @@ p {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .cta-button:hover {
@@ -78,16 +78,12 @@ p {
   }
 
   .hero-content {
-    max-width: 70%;
+    max-width: 90%;
   }
 
   .gradient-text,
-  .simple-text {
-    font-size: 60px;
-  }
-
-  h1 {
-    font-size: 4rem;
+  .simple-text,h1 {
+    font-size: 60px ;
   }
 
   p {
@@ -100,8 +96,6 @@ p {
   .hero {
     margin: 80px 0 30px;
     padding: 20px 30px;
-    justify-content: center;
-    text-align: center;
   }
 
   .hero-content {
@@ -109,42 +103,37 @@ p {
   }
 
   .gradient-text,
-  .simple-text {
-    font-size: 36px;
-    line-height: 1.2;
-    display: block;
-  }
+  .simple-text,h1 {
 
-  h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important ;
+  }
+  .badge {
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 15px 0 25px;
   }
 
-  .cta-button {
+  /* .cta-button {
     padding: 10px 20px;
-    font-size: 0.9rem;
+    font-size: 0.9rem;  
     margin: 0 auto;
-  }
+  } */
 }
 
 /* Small Mobile View (up to 480px) */
 @media (max-width: 480px) {
   .hero {
-    padding: 20px 15px;
+    padding: 20px 30px;
     margin: 60px 0 20px;
   }
 
   .gradient-text,
-  .simple-text {
-    font-size: 28px;
-  }
-
-  h1 {
-    font-size: 2rem;
+  .simple-text,h1 {
+    font-size: 28px ;
   }
 
   p {
@@ -153,5 +142,6 @@ p {
 
   .badge {
     font-size: 16px;
+    margin-bottom: .5rem;
   }
 }

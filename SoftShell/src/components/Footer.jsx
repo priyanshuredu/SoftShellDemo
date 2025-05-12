@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import footerData from "../data/FooterData.json";
 import "../styles/Footer.css";
 
-
 const Footer = () => {
+  const [expandedCategory, setExpandedCategory] = useState(null);
+
+  const toggleCategory = (category) => {
+    setExpandedCategory(expandedCategory === category ? null : category);
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -31,9 +36,14 @@ const Footer = () => {
         {/* Middle Section - Dynamic Links */}
         <div className="footer-links">
           {Object.entries(footerData.links).map(([category, items]) => (
-            <div key={category}>
-              <h4>{category}</h4>
-              <ul>
+            <div key={category} className="link-category">
+              <h4 onClick={() => toggleCategory(category)}>
+                {category}
+                <span className="dropdown-icon">
+                  {expandedCategory === category ? '−' : '+'}
+                </span>
+              </h4>
+              <ul className={expandedCategory === category ? 'expanded' : ''}>
                 {items.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -48,11 +58,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>{footerData.company.copyright}</p>
         <div className="social-icons">
-           {footerData.socialIcons.map((social, index) => (
-             <a key={index} href={social.link}>
-               <img src={social.icon} alt={`${social.icon.split('.')[0]} icon`} className="social-icon" />
-             </a>
-           ))}
+          {footerData.socialIcons.map((social, index) => (
+            <a key={index} href={social.link}>
+              <img src={social.icon} alt={`${social.icon.split('.')[0]} icon`} className="social-icon" />
+            </a>
+          ))}
         </div>
       </div>
     </footer>
